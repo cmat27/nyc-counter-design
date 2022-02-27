@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutComponent } from './components/about/about.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ServicesComponent } from './components/services/services.component';
+import { ReviewComponent } from './components/review/review.component';
 
 @NgModule({
   declarations: [
@@ -16,15 +17,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     NavbarComponent,
     AboutComponent,
-    PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    ServicesComponent,
+    ReviewComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
